@@ -11,6 +11,7 @@
         - ansible
         - python3-pip
         - gufw
+        - npm
 
   - name: install pip packages
     pip:
