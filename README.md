@@ -1,2 +1,2 @@
 # ansible
-sudo apt install ansible -y ; sudo ansible-pull -U https://github.com/WouterSpaans/ansible.git
+sudo apt install git ansible -y ; sudo ansible-pull -U https://github.com/WouterSpaans/ansible.git
