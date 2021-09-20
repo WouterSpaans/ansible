@@ -21,6 +21,7 @@
     community.general.snap:
       name:
         - brave
+        - bitwarden
 
   # Install a snap with classic confinement
   - name: install vscode with option --classic
