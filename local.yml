@@ -4,12 +4,16 @@
   become: true
 
   tasks:
-  - name: install packages
+  - name: install pip packages
+    pip:
+      name:
+        - psutil
+
+  - name: install apt packages
     package:
       name:
         - git
         - ansible
-        - psutil
 
   - name: install snaps
     community.general.snap:
