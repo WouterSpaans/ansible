@@ -49,7 +49,7 @@
   - name: set favorites
     become_user: wouter
     dconf:
-      key: "org/gnome/shell/favorite-apps"
+      key: "/org/gnome/shell/favorite-apps"
       value: "['org.gnome.Nautilus.desktop', 'snap-store_ubuntu-software.desktop', 'brave_brave.desktop', 'code_code.desktop', 'org.gnome.Terminal.desktop']"
 
   - name: copy .bashrc file
