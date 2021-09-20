@@ -53,6 +53,13 @@
       owner: wouter
       group: wouter
 
+  - name: copy .gitconfig file
+    copy:
+      src: files/gitconfig
+      dest: /home/wouter/.gitconfig
+      owner: wouter
+      group: wouter
+
   - name: add ansible user
     user:
       name: ansible
