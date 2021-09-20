@@ -9,8 +9,12 @@
       name:
         - git
         - ansible
-        - brave
 
+  - name: install snaps
+    community.general.snap:
+      name:
+        - brave
+        
   - name: copy wallpaper file
     copy:
       src: files/wallpaper.jpg
