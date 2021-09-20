@@ -10,6 +10,7 @@
         - git
         - ansible
         - python3-pip
+        - gufw
 
   - name: install pip packages
     pip:
