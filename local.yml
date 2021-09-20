@@ -20,6 +20,12 @@
     community.general.snap:
       name:
         - brave
+
+  # Install a snap with classic confinement
+  - name: install vscode with option --classic
+    community.general.snap:
+      name: code
+      classic: yes
         
   - name: copy wallpaper file
     copy:
