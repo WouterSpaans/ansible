@@ -23,6 +23,7 @@
       name:
         - brave
         - bitwarden
+        - dotnet-sdk
 
   # Install a snap with classic confinement
   - name: install vscode with option --classic
