@@ -27,10 +27,13 @@
   # Install a snap with classic confinement
   - name: install snaps with option --classic
     community.general.snap:
-      name: 
-        - code
-        - dotnet-sdk
+      name: code
       classic: yes
+
+  - name: install ".NET SDK" with option --channel=latest/edge
+    community.general.snap:
+      name: dotnet-sdk
+      channel: latest/edge
         
   - name: copy wallpaper file
     copy:
