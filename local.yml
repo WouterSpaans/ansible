@@ -26,7 +26,6 @@
 
   # Install a snap with classic confinement
   - name: install snaps with option --classic
-    become_user: wouter
     community.general.snap:
       name: 
         - code
