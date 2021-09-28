@@ -23,12 +23,13 @@
       name:
         - brave
         - bitwarden
-        - dotnet-sdk
 
   # Install a snap with classic confinement
   - name: install vscode with option --classic
     community.general.snap:
-      name: code
+      name: 
+        - code
+        - dotnet-sdk
       classic: yes
         
   - name: copy wallpaper file
