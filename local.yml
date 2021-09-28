@@ -33,6 +33,7 @@
   - name: install ".NET SDK" with option --channel=latest/edge
     community.general.snap:
       name: dotnet-sdk
+      classic: yes
       channel: latest/edge
         
   - name: copy wallpaper file
