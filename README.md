@@ -13,3 +13,6 @@ ssh-add
 ```
 dconf dump / > dconf-backup.txt
 ```
+
+# Some usefull links:
+https://github.com/ionide/ionide-vscode-fsharp/issues/1115
