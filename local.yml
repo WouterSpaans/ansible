@@ -36,13 +36,13 @@
   #    classic: yes
   #    channel: latest/edge
 
+  - name: Wait for sudo
+    become: yes
+    shell:  while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do sleep 5; done;  
   - name: Download MS product repository
     get_url:
       url: https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb
       dest: /tmp/packages-microsoft-prod.deb
-  - name: Wait for sudo
-    become: yes
-    shell:  while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do sleep 5; done;  
   - name: Install MS product repository
     apt: deb=/tmp/packages-microsoft-prod.deb
     become: true
