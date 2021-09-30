@@ -1,6 +1,6 @@
 # ansible
 ```
-sudo apt update -y ; sudo apt upgrade -y ; sudo apt install git ansible -y ; sudo ansible-pull -U https://github.com/WouterSpaans/ansible.git
+sudo apt install git ansible -y ; sudo ansible-pull -U https://github.com/WouterSpaans/ansible.git
 ```
 
 # For editing repo:
