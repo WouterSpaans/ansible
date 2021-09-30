@@ -95,6 +95,7 @@
   #    value: "'nothing'"
 
   - name: set desktop idle-delay
+    become_user: wouter
     dconf:
       key: "/org/gnome/desktop/session/idle-delay"
       value: "uint32 0"
