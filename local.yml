@@ -85,13 +85,11 @@
       value: "['org.gnome.Nautilus.desktop', 'snap-store_ubuntu-software.desktop', 'brave_brave.desktop', 'code_code.desktop', 'org.gnome.Terminal.desktop', 'bitwarden_bitwarden.desktop']"
 
   - name: set power sleep-inactive-ac-timeout
-    become_user: wouter
     dconf:
       key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout"
       value: "3600"
 
   - name: set power sleep-inactive-ac-type
-    become_user: wouter
     dconf:
       key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
       value: "'nothing'"
