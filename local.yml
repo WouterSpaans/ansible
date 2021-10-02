@@ -43,7 +43,6 @@
     apt:
       pkg: byobu
       state: absent
-    sudo: yes
     
   - name: Remove useless packages from the cache
     apt:
