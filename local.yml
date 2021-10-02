@@ -17,7 +17,25 @@
         - plugdev
         - lxd
       password: $6$i2Tj/l3o5rH2XQDr$EXbxoUdukY4x8mjR2OUz4f53lU9EGk6xh9fvJomNZllsgIjJyrFkFoT2Lq2k3qsPiDea9jOZ7ZMDP1w3MjJ8p/
+
+  - name: Enable auto logon AutomaticLoginEnable
+    lineinfile:
+      path: /etc/gdm3/custom.conf
+      search_string: '#  AutomaticLoginEnable = true'
+      line: '  AutomaticLoginEnable = true'
+      owner: root
+      group: root
+      mode: '0644'
     
+  - name: Enable auto logon AutomaticLogin 
+    lineinfile:
+      path: /etc/gdm3/custom.conf
+      search_string: '#  AutomaticLogin = user1'
+      line: '  AutomaticLogin = wouter'
+      owner: root
+      group: root
+      mode: '0644'
+
   - name: install apt packages
     package:
       name:
