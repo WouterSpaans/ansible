@@ -39,7 +39,7 @@
       group: root
       mode: '0644'
 
-  - name: Remove TIG
+  - name: Remove byobu
     apt:
       pkg: byobu
       state: absent
