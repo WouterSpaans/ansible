@@ -18,31 +18,31 @@
         - lxd
       password: $6$i2Tj/l3o5rH2XQDr$EXbxoUdukY4x8mjR2OUz4f53lU9EGk6xh9fvJomNZllsgIjJyrFkFoT2Lq2k3qsPiDea9jOZ7ZMDP1w3MjJ8p/
 
-- name: Enable auto logon AutomaticLoginEnable
-  lineinfile:
-    path: /etc/gdm3/custom.conf
-    search_string: '#  AutomaticLoginEnable = true'
-    line:   AutomaticLoginEnable = true
+  - name: Enable auto logon AutomaticLoginEnable
+    lineinfile:
+      path: /etc/gdm3/custom.conf
+      search_string: '#  AutomaticLoginEnable = true'
+      line:   AutomaticLoginEnable = true
 
-- name: Enable auto logon AutomaticLogin 
-  lineinfile:
-    path: /etc/gdm3/custom.conf
-    search_string: '#  AutomaticLogin = user1'
-    line:   AutomaticLogin = wouter
+  - name: Enable auto logon AutomaticLogin 
+    lineinfile:
+      path: /etc/gdm3/custom.conf
+      search_string: '#  AutomaticLogin = user1'
+      line:   AutomaticLogin = wouter
  
- - name: install apt packages
-    package:
-      name:
-        - git
-        - ansible
-        - python3-pip
-        - gufw
-        - npm
+   - name: install apt packages
+     package:
+       name:
+         - git
+         - ansible
+         - python3-pip
+         - gufw
+         - npm
 
-  - name: install pip packages
-    pip:
-      name:
-        - psutil
+    - name: install pip packages
+      pip:
+        name:
+          - psutil
 
   - name: install snaps
     community.general.snap:
