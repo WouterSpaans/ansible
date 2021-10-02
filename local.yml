@@ -9,7 +9,13 @@
       name: wouter
       comment: Wouter Spaans
       uid: 1040
-      group: admin
+      groups: 
+        - adm
+        - cdrom
+        - sudo
+        - dip
+        - plugdev
+        - lxd
       password: wouter
     
   - name: install apt packages
