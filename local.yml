@@ -63,6 +63,11 @@
     community.general.snap:
       name: code
       classic: yes
+      
+  - name: install dotnet extention for VSCode
+    become: yes
+    shell: code --install-extension ms-dotnettools.csharp
+
 
   #- name: install ".NET SDK" with option --channel=latest/edge
   #  community.general.snap:
