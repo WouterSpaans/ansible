@@ -39,6 +39,20 @@
       group: root
       mode: '0644'
 
+  - name: Remove TIG
+    apt:
+      pkg: byobu
+      state: absent
+    sudo: yes
+    
+  - name: Remove useless packages from the cache
+    apt:
+      autoclean: yes
+
+  - name: Remove dependencies that are no longer required
+    apt:
+      autoremove: yes
+
   - name: install apt packages
     package:
       name:
