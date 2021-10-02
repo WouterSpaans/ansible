@@ -47,6 +47,7 @@
         - gufw
         - npm
         - open-vm-tools-desktop
+        - gnome-tweak-tool
 
   - name: install pip packages
     pip:
