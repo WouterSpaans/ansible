@@ -22,7 +22,7 @@
     lineinfile:
       path: /etc/gdm3/custom.conf
       search_string: '#  AutomaticLoginEnable = true'
-      line:   AutomaticLoginEnable = true
+      line: '  AutomaticLoginEnable = true'
       owner: root
       group: root
       mode: '0644'
@@ -31,7 +31,7 @@
     lineinfile:
       path: /etc/gdm3/custom.conf
       search_string: '#  AutomaticLogin = user1'
-      line:   AutomaticLogin = wouter
+      line: '  AutomaticLogin = wouter'
       owner: root
       group: root
       mode: '0644'
