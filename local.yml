@@ -65,7 +65,7 @@
       classic: yes
       
   - name: install dotnet extention for VSCode
-    become: yes
+    become_user: wouter
     shell: code --install-extension ms-dotnettools.csharp
 
 
