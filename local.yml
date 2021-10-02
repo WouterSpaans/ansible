@@ -7,6 +7,7 @@
   - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
     ansible.builtin.user:
       name: wouter
+      shell: /bin/bash
       comment: Wouter Spaans
       uid: 1040
       groups: 
