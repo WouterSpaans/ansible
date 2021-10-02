@@ -16,7 +16,7 @@
         - dip
         - plugdev
         - lxd
-      password: "{{ 'password' | password_hash('sha512') }}"
+      password: $6$i2Tj/l3o5rH2XQDr$EXbxoUdukY4x8mjR2OUz4f53lU9EGk6xh9fvJomNZllsgIjJyrFkFoT2Lq2k3qsPiDea9jOZ7ZMDP1w3MjJ8p/
     
   - name: install apt packages
     package:
