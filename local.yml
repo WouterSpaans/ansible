@@ -102,8 +102,8 @@
     
   - name: copy wallpaper file
     copy:
-      src: files/wallpaper.jpg
-      dest: /usr/share/backgrounds/ansible-wallpaper.jpg
+      src: files/wallpaper_cavero1.png
+      dest: /usr/share/backgrounds/wallpaper_cavero1.png
       owner: root
       group: root
 
@@ -111,7 +111,7 @@
     become_user: wouter
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.jpg'"
+      value: "'file:///usr/share/backgrounds/wallpaper_cavero1.png'"
 
   - name: set wallpaper position
     become_user: wouter
