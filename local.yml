@@ -21,7 +21,8 @@
   - name: Enable auto logon AutomaticLoginEnable
     lineinfile:
       path: /etc/gdm3/custom.conf
-      search_string: '#  AutomaticLoginEnable = true'
+      regexp: '^AutomaticLoginEnable'
+      #search_string: '#  AutomaticLoginEnable = true'
       line: '  AutomaticLoginEnable = true'
       owner: root
       group: root
