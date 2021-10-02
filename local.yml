@@ -61,6 +61,7 @@
         - gufw
         - npm
         - open-vm-tools-desktop
+        - software-center
         
   - name: install pip packages
     pip:
