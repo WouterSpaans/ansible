@@ -16,7 +16,7 @@
         - dip
         - plugdev
         - lxd
-      password: wouter
+      password: "{{ 'password' | password_hash('sha512') }}"
     
   - name: install apt packages
     package:
